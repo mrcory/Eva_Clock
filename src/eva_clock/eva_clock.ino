@@ -186,12 +186,14 @@ void loop() {
     timeClient.update();
   #endif
 
-  if (timer(24,0)) {
-    if (TIMER_RUNNING) {
+  if (TIMER_RUNNING) { //Every 24 milliseconds update
+    if (timer(24,0)) {
       _tempCount = TIMER_END - millis();
       COUNTDOWN_TIME();
       STATUS_LIGHTS();
-    } else {
+    }
+  } else {
+    if (timer(100,0)) { //Every 100 milliseconds update
       DISPLAY_TIME();
       STATUS_LIGHTS();
     }
