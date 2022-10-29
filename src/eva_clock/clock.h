@@ -51,10 +51,10 @@ int RAINBOW_HUE = 0;
   void CONVERT_TIME() {
 
     #ifdef HOUR_12
-    if (timeClient.getHours() > 12) {
+    if (timeClient.getHours() >= 13) {
       byte  _temp_time = timeClient.getHours() - 12;
-      TIME_ARRAY [0] = _temp_time / 10;
-      TIME_ARRAY [1] = _temp_time % 10;
+      TIME_ARRAY [0] = (timeClient.getHours() - 12) / 10;
+      TIME_ARRAY [1] = (timeClient.getHours() - 12) % 10;
     }
     #endif
 
