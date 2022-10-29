@@ -7,7 +7,7 @@
 #define BROKER_USER      ""
 #define BROKER_PASS      ""
 
-#define VERSION "0.0.1"
+#define VERSION "1.0.1"
 
 // Unique ID must be set!
 byte mac[] = {0x87, 0x21, 0xE1, 0x7F, 0xFA, 0xF7};
@@ -79,4 +79,6 @@ const byte COLONS   [2] = {26, 29};
 const byte TEXT_LEFT [] = {50,51,52};
 
 //Extras
-long COUNTDOWN_MILLIS = 5000;//15000;//300000; 
+
+//Initial countdown at startup
+long COUNTDOWN_MILLIS = 10000;//15000;//300000; 
