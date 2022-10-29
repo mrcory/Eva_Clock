@@ -1,6 +1,9 @@
 # Eva_Clock
 Software for my printable Evangelion inspired clock.
 
+![Unfinished Clock](https://raw.githubusercontent.com/mrcory/Eva_Clock/main/images/build_pics/Clock.png)
+
+
 
 ## Project Background
   For this project I was wanting to build a clock. (Obviosly) When deciding on a theme, I thought about the countdown timer that is rather prominently 
