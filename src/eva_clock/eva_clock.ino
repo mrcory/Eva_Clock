@@ -40,17 +40,6 @@ int brightness = 30;
 int originalBrightness = 8;
 int oldBrightness = brightness;
 int FPS = 60;
-int glitterChance = 0;
-int currentPattern = 5;
-int gHue = 0;
-int colorIndex;
-int currentPalette;
-bool hueRun   = false;
-bool runDemo  = false;
-int breatheB = 20; //Brightness for "breathing"
-unsigned long breatheSpeed = 10; 
-int breatheMin = 120;
-int chsvTest[3] = {random(256),random(200,256),255};
 
 #include "clock.h"
 
@@ -207,8 +196,6 @@ void loop() {
       STATUS_LIGHTS();
     }
   }
-
-  
 
   if (timer(100,5)) {
     CONVERT_TIME();
