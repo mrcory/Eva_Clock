@@ -55,6 +55,9 @@ int RAINBOW_HUE = 0;
       byte  _temp_time = timeClient.getHours() - 12;
       TIME_ARRAY [0] = (timeClient.getHours() - 12) / 10;
       TIME_ARRAY [1] = (timeClient.getHours() - 12) % 10;
+    } else {
+      TIME_ARRAY [0] = timeClient.getHours() / 10;
+      TIME_ARRAY [1] = timeClient.getHours() % 10;
     }
     #endif
 

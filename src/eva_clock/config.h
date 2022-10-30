@@ -7,7 +7,7 @@
 #define BROKER_USER      ""
 #define BROKER_PASS      ""
 
-#define VERSION "1.0.1"
+#define VERSION "1.0.2"
 
 // Unique ID must be set!
 byte mac[] = {0x87, 0x21, 0xE1, 0x7F, 0xFA, 0xF7};
