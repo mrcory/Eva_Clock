@@ -58,6 +58,11 @@ int RAINBOW_HUE = 0;
     } else {
       TIME_ARRAY [0] = timeClient.getHours() / 10;
       TIME_ARRAY [1] = timeClient.getHours() % 10;
+
+      if (timeClient.getHours() == 0) { //If midnight, display 12 instead of 0
+        TIME_ARRAY [0] = 1;
+        TIME_ARRAY [1] = 2;
+      }
     }
     #endif
 
